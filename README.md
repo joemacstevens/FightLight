@@ -4,11 +4,11 @@ A local-first tool for cutting boxing highlights. Ingest video + JSON, cut with 
 
 ## Features
 
-- **JSON-first approach**: All project state is stored in `project_state.json`
-- **Web UI**: Flask-based interface for editing highlights
-- **CLI interface**: Typer-based command line tool
-- **Local-first**: No external dependencies, works offline
-- **Export-only cutting**: Video processing happens only on export
+- JSON-first approach: All project state is stored in `project_state.json`
+- Web UI: Flask-based interface for editing highlights
+- CLI interface: Typer-based command line tool
+- Local-first: No external dependencies, works offline
+- Export-only cutting: Video processing happens only on export
 
 ## Quick Start
 
