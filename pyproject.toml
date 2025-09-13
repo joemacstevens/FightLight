@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fightlight"
+version = "0.1.0"
+description = "Local-first tool for cutting boxing highlights"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "FightLight Team"}
+]
+dependencies = [
+    "flask>=2.3.0",
+    "typer[all]>=0.9.0",
+    "pydantic>=2.0.0",
+    "av>=10.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-flask>=1.2.0",
+]
+
+[project.scripts]
+fightlight = "hlc_cli.main:app"
+
+[tool.setuptools.packages.find]
+include = ["hlc_*"]
